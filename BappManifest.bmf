@@ -1,0 +1,13 @@
+Uuid: 48b97cf75c254a699670f0b2aaf3633c
+ExtensionType: 1
+Name: Request Pruner
+RepoName: request-pruner
+ScreenVersion: 1.0.0
+SerialVersion: 2
+MinPlatformVersion: 23
+ProOnly: False
+Author: koyokr
+ShortDescription: Remove configurable headers and cookies from Repeater or Proxy Intercept requests locally.
+EntryPoint: build/libs/request-pruner.jar
+BuildCommand: ./gradlew build
+SupportedProducts: Pro, Community
