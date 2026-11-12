@@ -1,0 +1,13 @@
+<p>Request Pruner removes configurable browser headers and analytics cookies from the
+request in Repeater or Proxy Intercept without sending HTTP requests.</p>
+<p>Right-click the request editor in Repeater or Proxy Intercept and select "Remove specified headers and cookies".
+The Request Pruner tab contains header and cookie lists with comments explaining each default entry.
+Add exact names or prefix* rules, toggle entries, and edit names and comments on custom entries.
+Header names ignore case; cookie names are case-sensitive.</p>
+<p>Cookie rules are grouped by vendor. Click a group to expand it, or toggle the
+whole group with its checkbox. Analytics and advertising cookies are enabled by default;
+identity, consent, and A/B testing cookies are off. Cloudflare cookies are listed: non-challenge cookies are enabled, while challenge and
+security-related cookies are off. Removing enabled Cloudflare cookies may change origin affinity,
+offline caching, or queue position. Other vendors' bot-defense cookies remain excluded. Settings and custom comments are saved in the Burp project.</p>
+<p>Some servers depend on removed headers or cookies, so responses may change.
+The extension retains the request method, URL, parameters, and body. Requires Java 21.</p>
